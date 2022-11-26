@@ -14,3 +14,20 @@ Dessa maneira só precisamos alterar nossos dados em um único lugar, garantindo
 ### Arquitetura Flux
 
 ![ArqFlux](./README/arquitetura-do-flux.png.png)
+
+* View:
+
+    A View é simplesmente os componentes visuais que são apresentados, ou seja, tudo o que aparece na tela para o usuário. 
+    Eles sempre passam dados de pai para filho, fazendo um fluxo de dados unidirecional. Nunca que um filho pode influenciar no pai.
+
+* Actions:
+
+    Método para garantir uma boa comunicação entre a View e as funções da Store. Elas são simplesmente objetos que usamos para padronizar a comunicação entre View e Dispatcher.
+
+* Store:
+
+    A Store é onde ficam os dados e lógica da aplicação. Então a View consome os dados presentes na Store. E é junto à Store que ficam as funções que alteram esses dados. 
+
+* Dispatcher:
+
+    Dispatcher é a "central de comunicação" onde ela repassa para a Store o que precisa ser feito. Se um componente chamar o Dispatcher para uma função que não existe na Store nada vai acontecer.
