@@ -31,3 +31,12 @@ Dessa maneira só precisamos alterar nossos dados em um único lugar, garantindo
 * Dispatcher:
 
     Dispatcher é a "central de comunicação" onde ela repassa para a Store o que precisa ser feito. Se um componente chamar o Dispatcher para uma função que não existe na Store nada vai acontecer.
+
+### Arquitetura Flux + React Js + Redux
+
+![ArqFlux](./README/Exemplo.png)
+
+Para reproduzir o conceito da Flux Architecture usei React jS para criar a interface de interação e usei Redux para criar o modelo de flux. O projeto tem como foco a criação de uma TO-DO list e sua dinâmica sendo construída a partir dos conceitos da Arquitetura Flux, ou seja, adicionar e remover elementos são funções que estão ligadas ao Flux.
+
+![ArqFlux](./README/imagem2.webp)
+
