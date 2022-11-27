@@ -3,7 +3,7 @@
 ## Problema:
 
 A arquitetura Flux foi criada para solucionar o problema de distribuir os dados da aplicação para todos os componentes, ou 
-então fazer com que os componentes enviem algum dado ou ação para que outro componente responda. Isso sem contar que cada componente pode guardar seus próprios dados. Caso um dado esteja presente em vários componentes diferentes você vai ter um certo trabalho para garantir que ele esteja sempre atualizado em todos os lugares, evitando inconsistências.
+então fazer com que os componentes enviem algum dado ou ação para que outro componente responda, isso sem contar que cada componente pode guardar seus próprios dados. Caso um dado esteja presente em vários componentes diferentes você vai ter um certo trabalho para garantir que ele esteja sempre atualizado em todos os lugares, evitando inconsistências.
 
 ## Solução:
 
@@ -69,7 +69,10 @@ Para reproduzir o conceito da Flux Architecture usei React jS para criar a inter
         }
     ```
 
-    Para adicionar um novo elemento, basicamente, eu retorno os elementos contidos no estado com a adição do novo item da lista ```markdown return [ ...state,  { id: action.payload.id, text: action.payload.text }]```
+    Para adicionar um novo elemento, basicamente, eu retorno os elementos contidos no estado com a adição do novo item da lista 
+    ```markdown
+        return [ ...state,  { id: action.payload.id, text: action.payload.text }] 
+     ```
 
     A exclusão de um elemento na lista de tarefas se concentra em verificar a matriz e fazer um filtro para remover o elemento que possui o mesmo id do item selecionado. Em seguida, ele retorna a matriz atualizada.
 
